@@ -226,6 +226,13 @@
     "category": "Media"
   },
   {
+    "name": "CertMate",
+    "slug": "certmate",
+    "icon": "/docs/images/services/certmate-logo.png",
+    "description": "Self-hosted SSL/TLS certificate management with a web UI and a REST API.",
+    "category": "Security"
+  },
+  {
     "name": "Change Detection",
     "slug": "changedetection",
     "icon": "/docs/images/services/changedetection-logo.png",

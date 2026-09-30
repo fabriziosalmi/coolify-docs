@@ -1,0 +1,26 @@
+---
+title: "CertMate"
+description: "Self-hosted SSL/TLS certificate management with a web UI and a REST API."
+og:
+  description: "Issue and renew SSL/TLS certificates on Coolify with CertMate: DNS-01 challenges, several certificate authorities, automatic renewal, and a REST API."
+category: "Security"
+icon: "/docs/images/services/certmate-logo.png"
+---
+
+# What is CertMate?
+
+CertMate issues and renews SSL/TLS certificates through ACME, using DNS-01 challenges, from a web interface and a REST API. It keeps an inventory of the certificates it manages and can deploy renewed certificates to where they are needed.
+
+## First start
+
+Coolify generates the **API Bearer Token**, the secret key and a backup passphrase. Open the service's environment variables in Coolify to read `API_BEARER_TOKEN`: the first page asks for it to authorize creating the administrator account.
+
+DNS providers and certificate authorities are configured in CertMate's own web interface.
+
+## Persistent storage
+
+Settings and users, issued certificates, logs and backups each live in a volume, so a redeploy keeps them.
+
+## Links
+
+- [GitHub](https://github.com/fabriziosalmi/certmate)
